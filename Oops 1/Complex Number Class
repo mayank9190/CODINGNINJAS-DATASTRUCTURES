@@ -1,3 +1,7 @@
+ 
+
+public class ComplexNumbers {
+ private int real;
  private int imaginary;
  private int choice;
  
