@@ -1,0 +1,20 @@
+
+public class Solution {
+
+	public static int firstIndex(int input[], int x) {
+		return firstIndex(input,x,0);
+        }
+	
+    
+    	private static int firstIndex(int input[], int x, int start){
+            	if(start==input.length){
+                    return -1;
+                }
+            if(input[start]==x){
+                return start;
+            }
+            
+            int ans = firstIndex(input,x,start+1);
+            return ans;
+        }
+}
