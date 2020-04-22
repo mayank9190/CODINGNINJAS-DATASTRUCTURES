@@ -1,0 +1,22 @@
+public class Solution {
+
+	public static int sum(int input[]) {
+        int p=input.length;
+	   if(p==1){
+        return input[0];
+    }
+        if(p==0){
+            return 0;
+        }
+        int[] input1= new int[input.length-1];
+         for(int i=1;i<input.length;i++){
+             input1[i-1]=input[i];
+         }
+        
+        return input[0] + sum(input1);
+        
+        
+        
+        
+	}
+}
