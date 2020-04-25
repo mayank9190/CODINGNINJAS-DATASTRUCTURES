@@ -1,0 +1,28 @@
+
+public class solution {
+
+	public static int sumOfDigits(int input){
+		
+      int rem= (input%10);
+        
+        if(input/10==0 && input%10==0 ){
+            return 0;
+        }
+        
+        
+        
+        
+        int ans=0;
+        if(rem>0 || rem==0 ){
+             ans= rem+sumOfDigits(input/10);
+           
+        }
+         return ans;
+        
+        
+        
+        
+        
+
+	}
+}
