@@ -1,0 +1,27 @@
+public class solution {
+
+	// Return the changed string
+	public static String replace(String input){
+	return replace(input+" ",0);
+	}
+    
+    public static String replace(String input, int start){
+        
+          if(start == input.length()){
+              return "";
+          } 
+           
+      String ans= "";
+    	String ans1= "";
+        if(input.charAt(start)=='p' && input.charAt(start+1)=='i' ){
+            ans1 +=  "3.14"+ replace( input, start+2)  ;
+        }
+        else{
+            ans+=input.charAt(start) + replace( input, start+1); 
+        }
+      
+     return ans1+ans;
+        
+    }
+  }
+  
