@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class solution {
 
@@ -14,8 +15,13 @@ public class solution {
            else { 
                return countZerosRec(input/10);
                 }
-       
-        
-        
-    }
+		}
+}
+
+public class runner {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		System.out.println(solution.countZerosRec(n));
+	}
 }
