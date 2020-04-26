@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class solution {
 
 	public static boolean isStringPalindrome(String input) {
@@ -31,3 +31,13 @@ public class solution {
        
    }
 }
+
+
+public class runner {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String input = s.nextLine();
+		System.out.println(solution.isStringPalindrome(input));
+	}
+}
+
