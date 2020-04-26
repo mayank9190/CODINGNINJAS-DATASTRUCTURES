@@ -1,0 +1,22 @@
+
+public class solution {
+
+	// Return the changed string
+	public static String removeX(String input){
+	return removeX(input, 0);
+
+	}
+   private static String removeX(String input, int start){
+       if(start==input.length()){
+           return "";
+       }
+       String ans="";
+       
+        if(input.charAt(start)!='x'){
+           ans += input.charAt(start);
+       }
+       return ans +  removeX(input,start+1);
+       
+       
+   }
+}
